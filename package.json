@@ -1,0 +1,25 @@
+{
+  "name": "code-grown-pet",
+  "version": "1.0.0",
+  "description": "A little companion that hatches and grows as you write and save code in VS Code.",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nyanbalukuina/code-grown-pet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Nyanbalukuina/code-grown-pet/issues"
+  },
+  "homepage": "https://github.com/Nyanbalukuina/code-grown-pet#readme"
+}
