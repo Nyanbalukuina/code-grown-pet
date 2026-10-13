@@ -2,10 +2,12 @@
   "name": "@code-grown-pet/companion",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/main/index.js",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "start": "npm run build && electron ."
   },
   "keywords": [],
   "author": "",
