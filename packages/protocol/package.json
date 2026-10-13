@@ -1,0 +1,1 @@
+{"name":"@code-grown-pet/protocol","version":"0.1.0","private":true,"type":"commonjs","main":"dist/index.js","types":"dist/index.d.ts","scripts":{"build":"tsc -p tsconfig.json","typecheck":"tsc -p tsconfig.json --noEmit"},"devDependencies":{"typescript":"^7.0.2","@types/node":"^26.6.5"}}

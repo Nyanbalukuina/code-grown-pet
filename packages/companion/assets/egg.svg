@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 160">
+  <!-- 殻の立体感を出すための淡いグラデーション。 -->
+  <defs>
+    <radialGradient id="shell" cx="32%" cy="26%" r="80%">
+      <stop offset="0" stop-color="#fffdf5" />
+      <stop offset="0.65" stop-color="#f7e8cd" />
+      <stop offset="1" stop-color="#debc91" />
+    </radialGradient>
+  </defs>
+  <!-- 上が細く下が丸い卵の輪郭。 -->
+  <path d="M64 8C43 8 14 66 14 103C14 133 35 151 64 151S114 133 114 103C114 66 85 8 64 8Z" fill="url(#shell)" stroke="#80664f" stroke-width="4" />
+  <!-- 小さな斑点と光を添える。 -->
+  <g fill="#d5b18a" opacity="0.65">
+    <ellipse cx="47" cy="64" rx="6" ry="8" transform="rotate(-20 47 64)" />
+    <ellipse cx="82" cy="86" rx="8" ry="6" transform="rotate(25 82 86)" />
+    <ellipse cx="42" cy="117" rx="7" ry="5" />
+    <ellipse cx="79" cy="130" rx="4" ry="5" />
+  </g>
+  <path d="M48 34C39 45 31 63 28 78" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity="0.7" />
+</svg>

@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "コードで育つペット: 拡張をデバッグ",
+      "type": "extensionHost",
+      "request": "launch",
+      "runtimeExecutable": "${execPath}",
+      "args": [
+        "--disable-extensions",
+        "--extensionDevelopmentPath=${workspaceFolder}/packages/extension"
+      ],
+      "outFiles": ["${workspaceFolder}/packages/extension/dist/**/*.js"],
+      "preLaunchTask": "build"
+    }
+  ]
+}

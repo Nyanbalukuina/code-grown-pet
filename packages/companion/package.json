@@ -5,9 +5,9 @@
   "main": "dist/main/index.js",
   "private": true,
   "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "typecheck": "tsc -p tsconfig.json --noEmit",
-    "start": "npm run build && electron ."
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.renderer.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.renderer.json --noEmit",
+    "start": "npm run build --workspace @code-grown-pet/protocol && npm run build && electron ."
   },
   "keywords": [],
   "author": "",
@@ -17,5 +17,8 @@
     "@types/node": "^26.6.5",
     "electron": "^44.7.0",
     "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@code-grown-pet/protocol": "*"
   }
 }

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- 文字コードと、読み込みを許可するリソースを設定する。 -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; object-src 'none'; base-uri 'none'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>コードで育つペット</title>
+    <!-- 卵のサイズと配置を外部CSSで指定する。 -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- コンパイル済みの描画処理をHTMLの読み込み後に実行する。 -->
+    <script src="../../dist/renderer/index.js" defer></script>
+  </head>
+  <body>
+    <!-- ローカルの自作SVGを表示し、画像のドラッグを防ぐ。 -->
+    <main class="pet-stage" aria-label="ペットの卵">
+      <img class="egg" src="../../assets/egg.svg" alt="クリーム色の斑点模様の卵" draggable="false" />
+    </main>
+  </body>
+</html>

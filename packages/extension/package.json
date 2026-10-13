@@ -1,0 +1,42 @@
+{
+  "name": "code-grown-pet-extension",
+  "displayName": "コードで育つペット",
+  "description": "VS Codeから小さな卵を開始・停止する開発用拡張です。",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "extensionKind": [
+    "ui"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "codeGrownPet.start",
+        "title": "コードで育つペット: 開始"
+      },
+      {
+        "command": "codeGrownPet.stop",
+        "title": "コードで育つペット: 停止"
+      },
+      {
+        "command": "codeGrownPet.toggle",
+        "title": "コードで育つペット: 表示切り替え"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@code-grown-pet/protocol": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/vscode": "^1.95.0",
+    "typescript": "^7.0.2"
+  }
+}

@@ -2,7 +2,7 @@
 
 A little companion that hatches and grows as you write and save code in VS Code.
 
-[日本語 README](README.ja.md) | [Architecture / 設計方針](ARCHITECTURE.ja.md)
+[日本語 README](README.ja.md) | [Architecture / 設計方針](ARCHITECTURE.ja.md) | [Development guide / 開発手順](DEVELOPMENT.ja.md)
 
 ## Concept
 
@@ -12,7 +12,7 @@ The pet lives in a small transparent overlay at the bottom-right of your screen.
 
 ## Project status
 
-**Planning stage.** This repository currently contains documentation only. The features below describe the intended experience, not functionality that is available today. Installation and usage instructions will be added when a runnable prototype exists.
+**Early development prototype.** The Electron overlay and a local Windows VS Code extension for starting, stopping, and toggling it are implemented. Save notifications now trigger a brief egg animation. Character counting, growth, and persistence are not implemented yet. Start, stop, toggle, and shutdown have been manually verified in the Development Host. Save animation still needs visual verification. See the development guide for F5 instructions. The planned experience below includes future features.
 
 ## Planned experience
 
@@ -59,9 +59,9 @@ The first overlay prototype may appear over any application. Showing it only whi
 
 ## Roadmap
 
-- [ ] M0: Start/stop the companion from a VS Code extension; display a static click-through egg, provide tray exit, and clean up on disconnect.
+- [x] M0: Commands, overlay, and shutdown manually verified in the VS Code Development Host.
 - [ ] M1: Add a gentle idle animation and a visibility shortcut.
-- [ ] Detect saves through a minimal VS Code extension.
+- [ ] Save detection and reaction implemented; visually verify the animation in the Development Host.
 - [ ] Define change-counting rules and connect save events to growth.
 - [ ] Persist progress and add hatching and growth stages.
 - [ ] Tune animations, accessibility, and resource usage for everyday work.

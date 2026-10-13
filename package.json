@@ -8,7 +8,11 @@
     "packages/*"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "typecheck": "npm run build --workspace @code-grown-pet/protocol && npm run typecheck --workspaces",
+    "test": "npm run build && node --test tests/*.test.cjs",
+    "build": "npm run build --workspace @code-grown-pet/protocol && npm run build --workspace @code-grown-pet/companion && npm run build --workspace code-grown-pet-extension",
+    "test:companion": "npm run build && node tests/companion-smoke.cjs",
+    "start:companion": "npm run start --workspace @code-grown-pet/companion"
   },
   "repository": {
     "type": "git",
